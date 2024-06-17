@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautify - Enhance Your Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Beautify</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Beautify</h1>
+            <p>Discover the best products to enhance your beauty</p>
+            <div class="hero-buttons">
+                <button onclick="showAlert()">Shop Now</button>
+                <button onclick="learnMore()">Learn More</button>
+                <button onclick="subscribe()">Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <h2>Our Bestsellers</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="face-mask-for-glowing-skin.jpg" alt="Product 1">
+                <h3>Face Mask</h3>
+                <p>Offer Price:$250</p>
+                <p>"Unveil Radiance: Breathe New Life into Your Skin with Our Face Mask!"
+
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="Hydrate_-facewash.webp" alt="Product 2">
+                <h3>Facewash</h3>
+                <p>Offer Price:$120</p>
+                <p>"Revitalize Your Glow: Cleanse, Hydrate, Shine with Hydrate+ Face Wash!"</p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="1.SotrueDermaRollerForHairGrowth_Skin1.webp" alt="Product 3">
+                <h3>Derma Roller</h3>
+                <p>Offer Price:$300</p>
+                <p>"Roll Your Way to Radiant Skin: Unlock Youthful Glow with Our Derma Roller!"
+
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="Unscentedbodylotion-1_800x.webp" alt="Product 4">
+                <h3>Body Lotion</h3>
+                <p>Offer Price:$350</p>
+                <p>"Silky Smooth: Indulge Your Skin with Luxurious Hydration!"
+
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="download (1).jfif" alt="Product 5">
+                <h3>Compact</h3>
+                <p>Offer Price:$250</p>
+                <p>"Flawless Finish: Elevate Your Look with Our Perfecting Compact!"
+
+                </p>
+                <button class="buy-now">Buy Now</button>
+            </div>
+           
+        </div>
+    </section>
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:info@beautify.com">info@beautify.com</a></p>
+        <p>&copy; 2024 Beautify. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #c06f6d;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #a05c5b;
+}
+
+.hero {
+    background: url('PT1063598.jpg.webp') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hero-buttons button {
+    background-color: #ffcccb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons button:hover {
+    background-color: #ff9999;
+    transform: scale(1.05);
+}
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+    color:black;
+    background-color: rgb(131, 152, 235);
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    color: black;
+    max-width: 200px;
+    background-color: rgb(213, 247, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.buy-now {
+    background-color: #c06f6d;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #a05c5b;
+}
+
+footer {
+    background-color: #c06f6d;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcccb;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+</style>
+
+
+<script>
+   function showAlert() {
+    alert("Welcome to Beautify! Explore our products and enhance your beauty.");
+}
+
+function learnMore() {
+    alert("Learn more about our products and how they can help you look your best!");
+}
+
+function subscribe() {
+    alert("Subscribe to our newsletter for the latest updates and exclusive offers!");
+}
+
+</script>
